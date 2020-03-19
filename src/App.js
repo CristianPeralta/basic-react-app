@@ -1,8 +1,13 @@
 import React, { Component } from 'react';
 import { Link, Route } from 'react-router-dom';
 
+import asyncComponent from './hoc/AsyncComponent/AsyncComponent';
+
 import Users from './containers/Users';
-import Pizza from './containers/Pizza';
+
+const asyncPizza = asyncComponent(() => {
+    return import('./containers/Pizza');
+});
 
 class App extends Component {
     render() {
@@ -14,7 +19,7 @@ class App extends Component {
                 </div>
                 <div>
                     <Route path="/" exact component={Users} />
-                    <Route path="/pizza" exact component={Pizza} />
+                    <Route path="/pizza" exact component={asyncPizza} />
                 </div>
             </div>
         );
