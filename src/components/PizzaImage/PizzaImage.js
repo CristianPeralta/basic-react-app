@@ -5,7 +5,7 @@ import classes from './PizzaImage.css';
 const pizzaImage = () => {
     return (
         <div className={classes.PizzaImage}>
-            <img src={PizzaImage} />
+            <img src={PizzaImage} className={classes.PizzaImg} />
         </div>
     );
 };
