@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+
+import Users from './containers/Users';
+import Pizza from './containers/Pizza';
 
 class App extends Component {
     render() {
@@ -8,6 +11,10 @@ class App extends Component {
                 <div>
                     <Link to="/">Users</Link>
                     <Link to="/pizza">Pizza</Link>
+                </div>
+                <div>
+                    <Route path="/" exact component={Users} />
+                    <Route path="/pizza" exact component={Pizza} />
                 </div>
             </div>
         );
