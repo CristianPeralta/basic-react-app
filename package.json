@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/CristianPeralta/basic-react-app/issues"
   },
-  "homepage": "https://github.com/CristianPeralta/basic-react-app#readme"
+  "homepage": "https://github.com/CristianPeralta/basic-react-app#readme",
+  "devDependencies": {
+    "webpack": "^4.42.0",
+    "webpack-dev-server": "^3.10.3"
+  }
 }
