@@ -13,6 +13,7 @@
   },
   "author": "Cristian Peralta",
   "license": "MIT",
+  "browserList": "> 1%, last 2 versions",
   "bugs": {
     "url": "https://github.com/CristianPeralta/basic-react-app/issues"
   },
