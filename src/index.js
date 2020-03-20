@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 
-import './inde.css';
+import './index.css';
 import App from './App';
 
 const app = (
